@@ -26,4 +26,19 @@ class My_test < Minitest::Test
 	def test_eight
 		assert_equal(1989, "MCMLXXXIX".to_arabic)
 	end
+	def test_nine
+		assert_equal("I", "I".to_arabic.to_roman)
+	end
+	def test_ten
+		assert_equal(1066, "MLXVI".to_arabic)
+	end
+	def test_eleven
+		assert_equal("CCXCIV", 294.to_roman)
+	end
+	def test_twelve
+		assert_equal(12, "XII".to_arabic)
+	end
+	def test_thirteen
+		assert_equal(14, 14.to_roman.to_arabic)
+	end
 end
