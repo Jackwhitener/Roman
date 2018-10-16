@@ -6,4 +6,8 @@ class My_test < Minitest::Test
 		input = 1
 		assert_equal("I",convert(input))
 	end
+	def test_two
+		input = 2
+		assert_equal("II",convert(input))
+	end
 end
